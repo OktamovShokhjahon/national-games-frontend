@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Home",
+    "games": "Games",
+    "gallery": "Gallery",
+    "about": "About",
+    "admin": "Admin"
+  },
+  "home": {
+    "title": "Khorezm National Games",
+    "subtitle": "Ancient traditions and cultural heritage",
+    "statistics": {
+      "games": "Games",
+      "images": "Images",
+      "facts": "Cultural Facts"
+    }
+  },
+  "games": {
+    "title": "Games",
+    "description": "Complete list of Khorezm national games",
+    "readMore": "Read More",
+    "back": "Back"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "View national games and cultural moments"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "The importance of Khorezm national games",
+    "content": "Khorezm national games are an important part of ancient traditions and cultural heritage. They have been passed down through generations and remain significant today."
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "cultural": "Preserving and promoting cultural heritage"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}

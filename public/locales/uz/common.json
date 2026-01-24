@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "games": "O'yinlar",
+    "gallery": "Galereya",
+    "about": "Haqida",
+    "admin": "Admin"
+  },
+  "home": {
+    "title": "Xorazm Milliy O'yinlari",
+    "subtitle": "Qadimiy an'analar va madaniy meros",
+    "statistics": {
+      "games": "O'yinlar",
+      "images": "Rasmlar",
+      "facts": "Madaniy faktlar"
+    }
+  },
+  "games": {
+    "title": "O'yinlar",
+    "description": "Xorazm milliy o'yinlarining to'liq ro'yxati",
+    "readMore": "Batafsil",
+    "back": "Orqaga"
+  },
+  "gallery": {
+    "title": "Galereya",
+    "description": "Milliy o'yinlar va madaniy lahzalarni ko'ring"
+  },
+  "about": {
+    "title": "Haqida",
+    "subtitle": "Xorazm milliy o'yinlarining ahamiyati",
+    "content": "Xorazm milliy o'yinlari - bu qadimiy an'analar va madaniy merosning muhim qismi. Ular avlodlar orasida uzatilgan va hozirgi kunda ham muhim ahamiyatga ega."
+  },
+  "footer": {
+    "copyright": "Barcha huquqlar himoyalangan",
+    "cultural": "Madaniy merosni saqlash va targ'ib qilish"
+  },
+  "theme": {
+    "light": "Yorug'",
+    "dark": "Qorong'u"
+  }
+}
