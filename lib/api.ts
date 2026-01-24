@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://national-games-backend.onrender.com';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://national-games-backend.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
