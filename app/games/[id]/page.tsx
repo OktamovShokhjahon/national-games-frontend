@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
-import { useParams, useRouter } from 'next/navigation';
-import Layout from '../../../components/Layout';
-import { useLanguage } from '../../../contexts/LanguageContext';
-import { gamesApi } from '../../../lib/api';
-import { getImageUrl } from '../../../lib/utils';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { FiArrowLeft } from 'react-icons/fi';
+import React, { useEffect, useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import Layout from "../../../components/Layout";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import { gamesApi } from "../../../lib/api";
+import { getImageUrl } from "../../../lib/utils";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { FiArrowLeft } from "react-icons/fi";
 
 interface Game {
   _id: string;
@@ -23,6 +23,11 @@ interface Game {
     ru: string;
   };
   description: {
+    uz: string;
+    en: string;
+    ru: string;
+  };
+  shortDescription?: {
     uz: string;
     en: string;
     ru: string;
@@ -44,7 +49,7 @@ export default function GameDetailPage() {
         const response = await gamesApi.getById(params.id as string);
         setGame(response.data);
       } catch (error) {
-        console.error('Failed to fetch game:', error);
+        console.error("Failed to fetch game:", error);
       } finally {
         setLoading(false);
       }
@@ -70,12 +75,14 @@ export default function GameDetailPage() {
       <Layout>
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Game not found</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              Game not found
+            </h2>
             <button
-              onClick={() => router.push('/games')}
+              onClick={() => router.push("/games")}
               className="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition"
             >
-              {t('games.back')}
+              {t("games.back")}
             </button>
           </div>
         </div>
@@ -94,7 +101,7 @@ export default function GameDetailPage() {
             className="mb-8 flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition"
           >
             <FiArrowLeft className="mr-2" />
-            {t('games.back')}
+            {t("games.back")}
           </motion.button>
 
           <motion.div
@@ -103,7 +110,22 @@ export default function GameDetailPage() {
             transition={{ duration: 0.6 }}
             className="glass rounded-2xl overflow-hidden p-8"
           >
-            {/* Image Carousel - On Top */}
+            {/* Game Title */}
+            <div className="mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+                {game.name[language]}
+              </h1>
+            </div>
+
+            {/* Short Description - Fallback to first paragraph of description if no shortDescription exists */}
+            <div className="mb-8">
+              <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                {game.shortDescription?.[language] ||
+                  game.description[language].split("\n")[0]}
+              </p>
+            </div>
+
+            {/* Image Carousel */}
             <div className="mb-8">
               {game.images && game.images.length > 0 ? (
                 <Swiper
@@ -142,15 +164,10 @@ export default function GameDetailPage() {
               )}
             </div>
 
-            {/* Game Info - Below Carousel */}
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                {game.name[language]}
-              </h1>
-              <div className="prose prose-lg dark:prose-invert max-w-none">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
-                  {game.description[language]}
-                </p>
+            {/* Full Description */}
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <div className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
+                {game.description[language]}
               </div>
             </div>
           </motion.div>

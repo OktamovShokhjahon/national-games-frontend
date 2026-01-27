@@ -37,5 +37,20 @@
   "theme": {
     "light": "Light",
     "dark": "Dark"
-  }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have questions or want to learn more about our traditional games? Reach out to us through any of these channels.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "addressValue": "Tashkent, Uzbekistan"
+  },
+  "cta": {
+    "title": "Ready to Explore More?",
+    "description": "Discover the rich heritage of traditional games and cultural activities that have been passed down through generations.",
+    "exploreGames": "Explore Games",
+    "viewGallery": "View Gallery"
+  },
+  "welcome": "Welcome to Xorazm National Games"
 }

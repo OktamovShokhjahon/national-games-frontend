@@ -37,5 +37,20 @@
   "theme": {
     "light": "Yorug'",
     "dark": "Qorong'u"
-  }
+  },
+  "contact": {
+    "title": "Bog'lanish",
+    "description": "Savollaringiz bormi yoki an'anaviy o'yinlarimiz haqida ko'proq ma'lumot olmoqchimisiz? Biz bilan quyidagi usullar orqali bog'lanishingiz mumkin.",
+    "email": "Elektron pochta",
+    "phone": "Telefon",
+    "address": "Manzil",
+    "addressValue": "Toshkent, O'zbekiston"
+  },
+  "cta": {
+    "title": "Ko'proq o'rganishga tayyormisiz?",
+    "description": "Avlodlar davomida o'tib kelayotgan an'anaviy o'yinlar va madaniy tadbirlarning boy merosini kashf eting.",
+    "exploreGames": "O'yinlarni ko'rish",
+    "viewGallery": "Galereyani ko'rish"
+  },
+  "welcome": "Xorazm Milliy O'yinlariga xush kelibsiz"
 }
