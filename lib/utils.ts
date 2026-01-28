@@ -2,7 +2,7 @@ export const getApiUrl = () => {
   return (
     process.env.NEXT_PUBLIC_API_URL ||
     // 'https://national-games-backend.onrender.com/api';
-    "http://localhost:5000/api"
+    "http://95.130.227.114/api"
   );
 };
 
