@@ -7,7 +7,7 @@
     "admin": "Admin"
   },
   "home": {
-    "title": "Khorezm National Games",
+    "title": "Xorazm vohasining milliy bayramlari va xalq o'yinlari",
     "subtitle": "Ancient traditions and cultural heritage",
     "statistics": {
       "games": "Games",
@@ -32,7 +32,8 @@
   },
   "footer": {
     "copyright": "All rights reserved",
-    "cultural": "Preserving and promoting cultural heritage"
+    "cultural": "Preserving and promoting cultural heritage",
+    "owner": "Gapparova Baxtigul (the owner of website)"
   },
   "theme": {
     "light": "Light",

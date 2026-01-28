@@ -7,7 +7,7 @@
     "admin": "Admin"
   },
   "home": {
-    "title": "Xorazm Milliy O'yinlari",
+    "title": "Xorazm vohasining milliy bayramlari va xalq o'yinlari",
     "subtitle": "Qadimiy an'analar va madaniy meros",
     "statistics": {
       "games": "O'yinlar",
@@ -32,7 +32,8 @@
   },
   "footer": {
     "copyright": "Barcha huquqlar himoyalangan",
-    "cultural": "Madaniy merosni saqlash va targ'ib qilish"
+    "cultural": "Madaniy merosni saqlash va targ'ib qilish",
+    "owner": "Gapparova Baxtigul (vebsayt egasi)"
   },
   "theme": {
     "light": "Yorug'",
