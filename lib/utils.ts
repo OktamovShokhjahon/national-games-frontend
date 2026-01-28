@@ -1,9 +1,5 @@
 export const getApiUrl = () => {
-  return (
-    process.env.NEXT_PUBLIC_API_URL ||
-    // 'https://national-games-backend.onrender.com/api';
-    "http://95.130.227.114:5000"
-  );
+  return "http://95.130.227.114";
 };
 
 export const getImageUrl = (path: string) => {
