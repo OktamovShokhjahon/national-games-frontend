@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ["framer-motion"],
   images: {
-    domains: ["localhost", "95.130.227.114"],
     remotePatterns: [
       {
         protocol: "http",
