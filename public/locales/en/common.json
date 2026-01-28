@@ -42,10 +42,10 @@
   "contact": {
     "title": "Get In Touch",
     "description": "Have questions or want to learn more about our traditional games? Reach out to us through any of these channels.",
-    "email": "Email",
     "phone": "Phone",
     "address": "Address",
-    "addressValue": "Tashkent, Uzbekistan"
+    "addressValue": "Khorezm, Uzbekistan",
+    "phoneNumber": "+998 95 556 41 96"
   },
   "cta": {
     "title": "Ready to Explore More?",

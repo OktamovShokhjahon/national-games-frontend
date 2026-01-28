@@ -390,24 +390,14 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <motion.div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1">
-              <FiMail className="text-3xl text-emerald-500" />
-              <p className="text-lg text-white font-medium mb-4">
-                {t("contact.email")}
-              </p>
-              <p className="text-base text-white/90 leading-relaxed">
-                info@example.com
-              </p>
-            </motion.div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <motion.div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1">
               <FiPhone className="text-3xl text-emerald-500" />
               <p className="text-lg text-white font-medium mb-4">
                 {t("contact.phone")}
               </p>
               <p className="text-base text-white/90 leading-relaxed">
-                +998 99 999 99 99
+                {t("contact.phoneNumber")}
               </p>
             </motion.div>
 

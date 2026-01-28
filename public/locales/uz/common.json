@@ -42,10 +42,10 @@
   "contact": {
     "title": "Bog'lanish",
     "description": "Savollaringiz bormi yoki an'anaviy o'yinlarimiz haqida ko'proq ma'lumot olmoqchimisiz? Biz bilan quyidagi usullar orqali bog'lanishingiz mumkin.",
-    "email": "Elektron pochta",
     "phone": "Telefon",
     "address": "Manzil",
-    "addressValue": "Toshkent, O'zbekiston"
+    "addressValue": "Xorazm, O'zbekiston",
+    "phoneNumber": "+998 95 556 41 96"
   },
   "cta": {
     "title": "Ko'proq o'rganishga tayyormisiz?",
