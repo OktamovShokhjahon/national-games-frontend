@@ -9,16 +9,19 @@
   "home": {
     "title": "Xorazm vohasining milliy bayramlari va xalq o'yinlari",
     "subtitle": "Qadimiy an'analar va madaniy meros",
+    "loading": "Yuklanmoqda...",
     "statistics": {
       "games": "O'yinlar",
       "images": "Rasmlar",
-      "facts": "Madaniy faktlar"
+      "facts": "Madaniy faktlar",
+      "error": "Ma'lumotlarni yuklashda xatolik yuz berdi"
     }
   },
   "games": {
     "title": "O'yinlar",
     "description": "Xorazm milliy o'yinlarining to'liq ro'yxati",
     "readMore": "Batafsil",
+    "viewAll": "Barchasini ko'rish",
     "back": "Orqaga"
   },
   "gallery": {
@@ -53,5 +56,8 @@
     "exploreGames": "O'yinlarni ko'rish",
     "viewGallery": "Galereyani ko'rish"
   },
-  "welcome": "Xorazm Milliy O'yinlariga xush kelibsiz"
+  "welcome": "Xorazm Milliy O'yinlariga xush kelibsiz",
+  "hero": {
+    "scroll": "Pastga suring"
+  }
 }

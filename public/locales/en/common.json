@@ -7,18 +7,21 @@
     "admin": "Admin"
   },
   "home": {
-    "title": "Xorazm vohasining milliy bayramlari va xalq o'yinlari",
+    "title": "National holidays and folk games of the Xorazm region",
     "subtitle": "Ancient traditions and cultural heritage",
+    "loading": "Loading...",
     "statistics": {
       "games": "Games",
       "images": "Images",
-      "facts": "Cultural Facts"
+      "facts": "Cultural Facts",
+      "error": "Error loading data"
     }
   },
   "games": {
     "title": "Games",
     "description": "Complete list of Khorezm national games",
     "readMore": "Read More",
+    "viewAll": "View All",
     "back": "Back"
   },
   "gallery": {
@@ -53,5 +56,8 @@
     "exploreGames": "Explore Games",
     "viewGallery": "View Gallery"
   },
-  "welcome": "Welcome to Xorazm National Games"
+  "welcome": "Welcome to Xorazm National Games",
+  "hero": {
+    "scroll": "Scroll Down"
+  }
 }

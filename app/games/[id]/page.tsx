@@ -14,6 +14,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { FiArrowLeft } from "react-icons/fi";
+import SafeHtmlRenderer from "../../../components/SafeHtmlRenderer";
 
 interface Game {
   _id: string;
@@ -166,9 +167,10 @@ export default function GameDetailPage() {
 
             {/* Full Description */}
             <div className="prose prose-lg dark:prose-invert max-w-none">
-              <div className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
-                {game.description[language]}
-              </div>
+              <SafeHtmlRenderer
+                html={game.description[language]}
+                className="text-gray-700 dark:text-gray-300 leading-relaxed"
+              />
             </div>
           </motion.div>
         </div>
