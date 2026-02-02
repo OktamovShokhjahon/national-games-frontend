@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useTheme } from '../contexts/ThemeContext';
-import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi';
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { useLanguage } from "../contexts/LanguageContext";
+import { useTheme } from "../contexts/ThemeContext";
+import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 
 const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -12,32 +13,50 @@ const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const languages = [
-    { code: 'uz' as const, label: 'UZ' },
-    { code: 'en' as const, label: 'EN' },
-    { code: 'ru' as const, label: 'RU' },
+    { code: "uz" as const, label: "UZ" },
+    { code: "en" as const, label: "EN" },
+    { code: "ru" as const, label: "RU" },
   ];
 
   return (
     <nav className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-2xl font-bold text-primary-600 dark:text-primary-400">
-            Xorazm
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.jpg"
+              alt="Xorazm Milliy O'yinlari"
+              width={40}
+              height={40}
+              className="rounded-lg"
+            />
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition">
-              {t('nav.home')}
+            <Link
+              href="/"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition"
+            >
+              {t("nav.home")}
             </Link>
-            <Link href="/games" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition">
-              {t('nav.games')}
+            <Link
+              href="/games"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition"
+            >
+              {t("nav.games")}
             </Link>
-            <Link href="/gallery" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition">
-              {t('nav.gallery')}
+            <Link
+              href="/gallery"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition"
+            >
+              {t("nav.gallery")}
             </Link>
-            <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition">
-              {t('nav.about')}
+            <Link
+              href="/about"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition"
+            >
+              {t("nav.about")}
             </Link>
             {/*<Link href="/admin" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition">
               {t('nav.admin')}
@@ -51,8 +70,8 @@ const Navbar: React.FC = () => {
                   onClick={() => setLanguage(lang.code)}
                   className={`px-2 py-1 rounded text-sm font-medium transition ${
                     language === lang.code
-                      ? 'bg-primary-600 text-white'
-                      : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+                      ? "bg-primary-600 text-white"
+                      : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                   }`}
                 >
                   {lang.label}
@@ -65,7 +84,7 @@ const Navbar: React.FC = () => {
               onClick={toggleTheme}
               className="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
-              {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
+              {theme === "light" ? <FiMoon size={20} /> : <FiSun size={20} />}
             </button>
           </div>
 
@@ -81,17 +100,29 @@ const Navbar: React.FC = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-4">
-            <Link href="/" className="block text-gray-700 dark:text-gray-300 hover:text-primary-600">
-              {t('nav.home')}
+            <Link
+              href="/"
+              className="block text-gray-700 dark:text-gray-300 hover:text-primary-600"
+            >
+              {t("nav.home")}
             </Link>
-            <Link href="/games" className="block text-gray-700 dark:text-gray-300 hover:text-primary-600">
-              {t('nav.games')}
+            <Link
+              href="/games"
+              className="block text-gray-700 dark:text-gray-300 hover:text-primary-600"
+            >
+              {t("nav.games")}
             </Link>
-            <Link href="/gallery" className="block text-gray-700 dark:text-gray-300 hover:text-primary-600">
-              {t('nav.gallery')}
+            <Link
+              href="/gallery"
+              className="block text-gray-700 dark:text-gray-300 hover:text-primary-600"
+            >
+              {t("nav.gallery")}
             </Link>
-            <Link href="/about" className="block text-gray-700 dark:text-gray-300 hover:text-primary-600">
-              {t('nav.about')}
+            <Link
+              href="/about"
+              className="block text-gray-700 dark:text-gray-300 hover:text-primary-600"
+            >
+              {t("nav.about")}
             </Link>
             {/* <Link href="/admin" className="block text-gray-700 dark:text-gray-300 hover:text-primary-600">
               {t('nav.admin')}
@@ -105,8 +136,8 @@ const Navbar: React.FC = () => {
                     onClick={() => setLanguage(lang.code)}
                     className={`px-3 py-1 rounded text-sm font-medium ${
                       language === lang.code
-                        ? 'bg-primary-600 text-white'
-                        : 'text-gray-600 dark:text-gray-400'
+                        ? "bg-primary-600 text-white"
+                        : "text-gray-600 dark:text-gray-400"
                     }`}
                   >
                     {lang.label}
@@ -117,7 +148,7 @@ const Navbar: React.FC = () => {
                 onClick={toggleTheme}
                 className="p-2 rounded-lg text-gray-600 dark:text-gray-400"
               >
-                {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
+                {theme === "light" ? <FiMoon size={20} /> : <FiSun size={20} />}
               </button>
             </div>
           </div>
